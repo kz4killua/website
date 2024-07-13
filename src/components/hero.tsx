@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="flex items-center max-w-sm lg:max-w-lg">
         <div className="flex flex-col gap-y-5">
           <h1 className="font-bold text-4xl md:text-5xl">
-            Hi, I&apos;m Ifeanyi! <span className="text-4xl lg:text-5xl">👋</span>
+            Hi, I&apos;m Ifeanyi! <span className="text-3xl lg:text-5xl">👋</span>
           </h1> 
           <h3 className="font-semibold text-xl">
             Software Engineer
