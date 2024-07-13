@@ -1,7 +1,14 @@
-"use server"
+import Header from "@/components/header"
 
-import { redirect } from 'next/navigation';
 
-export default async function Home() {
-  redirect("https://github.com/kz4killua")
+export default function Home() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <div className="h-screen"></div>
+        <div className="h-screen"></div>
+      </main>
+    </div>
+  )
 }
