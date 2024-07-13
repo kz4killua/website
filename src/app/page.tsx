@@ -1,4 +1,7 @@
+import Image from "next/image"
+import Container from "@/components/container"
 import Header from "@/components/header"
+import Hero from "@/components/hero"
 
 
 export default function Home() {
@@ -6,8 +9,7 @@ export default function Home() {
     <div>
       <Header />
       <main>
-        <div className="h-screen"></div>
-        <div className="h-screen"></div>
+        <Hero />
       </main>
     </div>
   )
