@@ -52,19 +52,19 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`h-20 sticky top-0 transition-shadow ${isScrolled ? 'shadow' : ''}`}>
+    <header className={`h-20 sticky top-0 bg-background transition-shadow ${isScrolled ? 'shadow' : ''}`}>
       <Container className="h-full flex items-center justify-between">
         <Link href="/" className="font-medium">
           Ifeanyi Obinelo
         </Link>
-        <div className="flex items-center justify-center gap-x-6 text-sm font-medium">
+        <div className="flex items-center justify-center gap-x-3 sm:gap-x-6 text-sm font-medium">
           <Link 
             href="https://github.com/kz4killua" 
             className="flex items-center justify-center gap-x-2"
             target="_blank"
           >
             <GithubIcon className="w-5 h-5" />
-            Github
+            <span className="hidden sm:block">Github</span>
           </Link>
           <Link 
             href="https://www.linkedin.com/in/ifeanyiobinelo" 
@@ -72,7 +72,7 @@ export default function Header() {
             target="_blank"
           >
             <LinkedInIcon className="w-5 h-5" />
-            LinkedIn
+            <span className="hidden sm:block">LinkedIn</span>
           </Link>
         </div>
       </Container>
