@@ -5,7 +5,7 @@ export function SectionHeading({
   className?: string
 }) {
   return (
-    <h1 className={`font-bold text-center text-4xl mb-2 ${className}`}>
+    <h1 className={`font-bold text-center text-3xl md:text-4xl mb-2 ${className}`}>
       {children}
     </h1>
   )
@@ -19,7 +19,7 @@ export function SectionSubheading({
   className?: string
 }) {
   return (
-    <h2 className={`text-center text-gray-600 text-lg ${className}`}>
+    <h2 className={`text-center text-gray-600 md:text-lg ${className}`}>
       {children}
     </h2>
   )

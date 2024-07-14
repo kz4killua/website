@@ -10,14 +10,13 @@ export default function About() {
     <Container>
       <SectionHeading>About Me</SectionHeading>
       <SectionSubheading>Introducing me, myself, and I</SectionSubheading>
-      <div className="mt-7 text-lg text-gray-600 flex flex-col gap-y-2">
+      <div className="mt-7 md:text-lg text-gray-600 flex flex-col gap-y-2">
         <p>
           👋 Hey there! My name is Ifeanyi (pronounced ee-fan-yee) and I&apos;m a 
           student at Ontario Tech University, studying Computer Science.           
         </p>
         <p>
-          👨‍💻 I&apos;m a big fan of technology and programming and I&apos;m always looking for ways to apply what I&apos;ve learned. 
-          I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning.
+          👨‍💻 I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning.
         </p>
         <p>
           💼 Sometimes, I do freelance software engineering on Upwork. I am currently 
@@ -33,9 +32,6 @@ export default function About() {
         </p>
         <p>
           🚀 I like to do hackathons! 
-        </p>
-        <p>
-          😄 I&apos;m also an eighth grade spelling bee champion, so you know I&apos;m good with words. 
         </p>
       </div>
     </Container>
