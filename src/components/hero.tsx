@@ -21,7 +21,7 @@ export default function Hero() {
       </div>
       <div className="w-full order-first md:order-last md:w-fit flex items-center justify-center">
         <Image 
-          src="/images/headshot.jpg"
+          src="/images/headshot.png"
           alt="Ifeanyi"
           width={250}
           height={250}
