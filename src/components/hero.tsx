@@ -10,10 +10,10 @@ export default function Hero() {
           <h1 className="font-bold text-4xl md:text-5xl">
             Hi, I&apos;m Ifeanyi! <span className="text-3xl lg:text-5xl">👋</span>
           </h1> 
-          <h3 className="font-semibold text-xl">
+          <h3 className="font-semibold md:text-xl">
             Software Engineer
           </h3>
-          <p className="text-lg text-gray-600">
+          <p className="md:text-lg text-gray-600">
             Currently pursuing a Bachelor&apos;s degree in Computer Science at Ontario Tech University. 
             Also an eighth grade spelling bee champion :)
           </p>
