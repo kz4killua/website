@@ -52,7 +52,7 @@ export default function Header() {
   }, [])
 
   return (
-    <header className={`h-20 sticky top-0 bg-background transition-shadow ${isScrolled ? 'shadow' : ''}`}>
+    <header className={`h-20 z-50 sticky top-0 bg-background transition-shadow ${isScrolled ? 'shadow' : ''}`}>
       <Container className="h-full flex items-center justify-between">
         <Link href="/" className="font-medium">
           Ifeanyi Obinelo
