@@ -19,7 +19,7 @@ export function SectionSubheading({
   className?: string
 }) {
   return (
-    <h2 className={`text-center text-gray-600 md:text-lg ${className}`}>
+    <h2 className={`text-center text-gray-600 ${className}`}>
       {children}
     </h2>
   )
