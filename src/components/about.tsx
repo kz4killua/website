@@ -19,7 +19,7 @@ export default function About() {
           👨‍💻 I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning.
         </p>
         <p>
-          💼 Sometimes, I do freelance software engineering on Upwork. I am currently 
+          💼 I do freelance software engineering on Upwork. I am currently 
           a Top Rated freelancer with a 100% job success score (and a 5-star rating!). 
           Check out my profile and reviews 
           <Link 
