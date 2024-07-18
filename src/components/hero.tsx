@@ -15,7 +15,6 @@ export default function Hero() {
           </h3>
           <p className="md:text-lg text-gray-600">
             Currently pursuing a Bachelor&apos;s degree in Computer Science at Ontario Tech University. 
-            Also an eighth grade spelling bee champion :)
           </p>
         </div>
       </div>
