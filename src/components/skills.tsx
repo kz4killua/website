@@ -192,7 +192,7 @@ function SkillsList({ skills, reverse=false } : {
             alt={skill.name}
             width={32}
             height={32}
-            className={clsx("size-8 mx-8")}
+            className={clsx("size-8 mx-4 md:mx-8")}
           />
           <p className="text-center text-xs">{skill.name}</p>
         </div>

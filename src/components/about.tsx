@@ -24,14 +24,15 @@ export default function About() {
           Check out my profile and reviews 
           <Link 
             href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
-            className="ml-1 text-blue-500 hover:text-blue-700 underline"
+            className="ml-1 text-blue-500 hover:text-blue-700 underline underline-offset-4"
             target="_blank"
           >
             here
           </Link>.
         </p>
         <p>
-          🚀 I like to do hackathons! 
+          🚀 I'm a big fan of hackathons, and I have participated in 
+          (and won) a few.
         </p>
       </div>
     </Container>
