@@ -32,7 +32,7 @@ export default function About() {
         </p>
         <p>
           🚀 I&apos;m a big fan of hackathons, and I have participated in 
-          (and won) a few.
+          (and won) quite a few.
         </p>
       </div>
     </Container>
