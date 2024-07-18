@@ -31,7 +31,7 @@ export default function About() {
           </Link>.
         </p>
         <p>
-          🚀 I'm a big fan of hackathons, and I have participated in 
+          🚀 I&apos;m a big fan of hackathons, and I have participated in 
           (and won) a few.
         </p>
       </div>
