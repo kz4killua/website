@@ -7,6 +7,7 @@ import Experience from "@/components/experience"
 import Skills from "@/components/skills"
 import Projects from "@/components/projects"
 import Reviews from "@/components/reviews"
+import Footer from "@/components/footer"
 
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
           <Projects />
           <Skills />
           <Reviews />
+          <Footer />
         </div>
       </main>
     </div>
