@@ -3,7 +3,6 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import Container from "@/components/container"
-import { LinkedInIcon, GithubIcon } from "@/components/icons"
 
 
 export default function Header() {

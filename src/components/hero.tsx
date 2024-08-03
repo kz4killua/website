@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { InstagramIcon, LinkedinIcon, GithubIcon } from "lucide-react"
+import { InstagramIcon, LinkedinIcon, GithubIcon } from "@/components/icons"
 import Container from "@/components/container"
 import "./hero.modules.css"
 
@@ -20,15 +20,15 @@ export default function Hero() {
 
 function ContactLinks() {
   return (
-    <div className="flex flex-row sm:flex-col items-center justify-center gap-10">
+    <div className="flex flex-row sm:flex-col items-center justify-center gap-12">
       <Link href={"https://www.instagram.com/kz4killua/"} target="_blank">
-        <InstagramIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <InstagramIcon className="hover:fill-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={25} />
       </Link>
       <Link href={"https://github.com/kz4killua"} target="_blank">
-        <GithubIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <GithubIcon className="hover:fill-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={25} />
       </Link>
       <Link href={"https://www.linkedin.com/in/ifeanyiobinelo"} target="_blank">
-        <LinkedinIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <LinkedinIcon className="hover:fill-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={25} />
       </Link>
     </div>
   )

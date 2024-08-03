@@ -1,7 +1,8 @@
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, LinkIcon, GithubIcon } from "lucide-react";
+import { ArrowRight, LinkIcon } from "lucide-react";
+import { GithubIcon } from "@/components/icons";
 import Container from "@/components/container";
 import { SectionHeading, SectionSubheading } from "./typography";
 
@@ -28,6 +29,15 @@ const projects: Project[] = [
     },
   },
   {
+    title: "Wiki Rec",
+    description: "A cross-category recommendation engine that recommends books, movies, tv series, games, and music based on data from Wikipedia",
+    image: "/images/wiki-rec.png",
+    links: {
+      github: "https://github.com/kz4killua/wikirec",
+      live: "https://wikirec.ifeanyiobinelo.com/",
+    },
+  },
+  {
     title: "FPL AI",
     description: "A machine learning system that predicts the performance of English Premier League players",
     image: "/images/fpl-ai.png",
@@ -41,15 +51,6 @@ const projects: Project[] = [
     image: "/images/songle.png",
     links: {
       github: "https://github.com/kz4killua/songle",
-    },
-  },
-  {
-    title: "Wiki Rec",
-    description: "A cross-category recommendation engine that recommends books, movies, tv series, games, and music based on data from Wikipedia",
-    image: "/images/wiki-rec.png",
-    links: {
-      github: "https://github.com/kz4killua/wikirec",
-      live: "https://wikirec.ifeanyiobinelo.com/",
     },
   },
   {
@@ -121,7 +122,7 @@ function ProjectItem({ title, description, image, links } : Project) {
           )}
           {links.github && (
             <Link href={links.github} className="group hover:text-primary flex gap-x-1 items-center" target="_blank">
-              <GithubIcon height={14} width={14} className="group-hover:rotate-180 transition-transform duration-300" /> GitHub
+              <GithubIcon height={14} width={14} className="group-hover:rotate-180 group-hover:fill-primary transition-transform duration-300" /> GitHub
             </Link>
           )}
         </div>
