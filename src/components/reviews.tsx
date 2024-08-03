@@ -91,13 +91,13 @@ export default function Reviews() {
         <Link 
           href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
           target="_blank"
-          className="font-semibold text-secondary hover:underline underline-offset-4"
+          className="font-semibold text-secondary hover:text-primary hover:underline underline-offset-4"
         >
           Upwork
         </Link>
       </SectionSubheading>
 
-      <div className="mt-7 text-gray-600">
+      <div className="mt-7">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="flex flex-col gap-y-4">
             {firstHalf.map((review, index) => (
@@ -117,7 +117,7 @@ export default function Reviews() {
             target="_blank"
             className={clsx(
               "group flex items-center justify-center",
-              "font-semibold text-secondary hover:underline underline-offset-4",
+              "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
             )}
           >
             Upwork&nbsp;

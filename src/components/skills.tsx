@@ -160,7 +160,7 @@ export default function Skills() {
     <Container>
       <SectionHeading>Skills</SectionHeading>
       <SectionSubheading>Tools I use</SectionSubheading>
-      <div className="mt-7 md:text-lg text-gray-600 space-y-2 relative">
+      <div className="mt-7 md:text-lg text-muted space-y-2 relative">
         <SkillsList skills={skills.languages} />
         <SkillsList skills={skills.frameworks} reverse />
         <SkillsList skills={skills.tools} />

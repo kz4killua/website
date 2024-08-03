@@ -21,7 +21,7 @@ export default function About() {
           Check out my Github 
           <Link 
             href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
-            className="ml-1 text-secondary font-semibold hover:underline underline-offset-4"
+            className="ml-1 text-secondary hover:text-primary font-semibold hover:underline underline-offset-4"
             target="_blank"
           >
             here
@@ -33,7 +33,7 @@ export default function About() {
           Check out my profile and reviews 
           <Link 
             href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
-            className="ml-1 text-secondary font-semibold hover:underline underline-offset-4"
+            className="ml-1 text-secondary hover:text-primary font-semibold hover:underline underline-offset-4"
             target="_blank"
           >
             here

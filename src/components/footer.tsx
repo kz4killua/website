@@ -13,7 +13,7 @@ export default function Footer() {
         <h1 className="font-bold text-lg">
           Ifeanyi Obinelo
         </h1>
-        <div className="flex text-gray-600 items-center justify-center gap-x-10">
+        <div className="flex items-center justify-center gap-x-10">
           <Link href={"https://www.linkedin.com/in/ifeanyiobinelo"} target="_blank">
             <LinkedInIcon height={30} />
           </Link>

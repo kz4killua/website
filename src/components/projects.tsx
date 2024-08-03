@@ -1,8 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, LinkIcon } from "lucide-react";
-import { GithubIcon } from "@/components/icons";
+import { ArrowRight, LinkIcon, GithubIcon } from "lucide-react";
 import Container from "@/components/container";
 import { SectionHeading, SectionSubheading } from "./typography";
 
@@ -89,7 +88,7 @@ export default function Projects() {
             target="_blank"
             className={clsx(
               "group flex items-center justify-center",
-              "font-semibold text-secondary hover:underline underline-offset-4",
+              "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
             )}
           >
             Github&nbsp;
@@ -116,12 +115,12 @@ function ProjectItem({ title, description, image, links } : Project) {
         <p className="text-base">{description}</p>
         <div className="text-sm font-medium flex gap-x-4">
           {links.live && (
-            <Link href={links.live} className="group hover:text-secondary flex gap-x-1 items-center" target="_blank">
-              <LinkIcon className="group-hover:rotate-180 transition-transform duration-300" size={14} /> Live
+            <Link href={links.live} className="group hover:text-primary flex gap-x-1 items-center" target="_blank">
+              <LinkIcon className="group-hover:rotate-180 transition-transform duration-300" size={14} /> Website
             </Link>
           )}
           {links.github && (
-            <Link href={links.github} className="group hover:text-secondary flex gap-x-1 items-center" target="_blank">
+            <Link href={links.github} className="group hover:text-primary flex gap-x-1 items-center" target="_blank">
               <GithubIcon height={14} width={14} className="group-hover:rotate-180 transition-transform duration-300" /> GitHub
             </Link>
           )}

@@ -22,13 +22,13 @@ function ContactLinks() {
   return (
     <div className="flex flex-row sm:flex-col items-center justify-center gap-10">
       <Link href={"https://www.instagram.com/kz4killua/"} target="_blank">
-        <InstagramIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <InstagramIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
       </Link>
       <Link href={"https://github.com/kz4killua"} target="_blank">
-        <GithubIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <GithubIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
       </Link>
       <Link href={"https://www.linkedin.com/in/ifeanyiobinelo"} target="_blank">
-        <LinkedinIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+        <LinkedinIcon className="hover:text-primary transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
       </Link>
     </div>
   )
