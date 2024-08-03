@@ -54,10 +54,6 @@ const skills = {
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
     },
     {
-      name: "Node.js", 
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-    },
-    {
       name: "Flask", 
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg"
     },
@@ -164,12 +160,12 @@ export default function Skills() {
     <Container>
       <SectionHeading>Skills</SectionHeading>
       <SectionSubheading>Tools I use</SectionSubheading>
-      <div className="mt-7 md:text-lg text-gray-600 space-y-2 relative">
+      <div className="mt-7 md:text-lg text-muted space-y-2 relative">
         <SkillsList skills={skills.languages} />
         <SkillsList skills={skills.frameworks} reverse />
         <SkillsList skills={skills.tools} />
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-white dark:from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-white dark:from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
       </div>
     </Container>
   )

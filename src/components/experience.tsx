@@ -49,7 +49,7 @@ export default function Experience() {
     <Container>
       <SectionHeading>Experience</SectionHeading>
       <SectionSubheading>My journey so far</SectionSubheading>
-      <div className="space-y-10 mt-7 md:text-lg text-gray-600">
+      <div className="space-y-10 mt-7 md:text-lg">
         {experience.map((item, index) => (
           <ExperienceItem 
             key={index}
@@ -84,11 +84,11 @@ function ExperienceItem({ image, company, role, date, description } : {
       />
       <div className="w-full">
         <div className="flex flex-col md:flex-row gap-y-1 mb-1 md:items-center justify-between">
-          <h3 className="font-semibold text-black">{company}</h3>
-          <p className="text-gray-600 text-sm md:text-base">{date}</p>
+          <h3 className="font-semibold text-foreground">{company}</h3>
+          <p className="text-muted text-sm md:text-base">{date}</p>
         </div>
-        <p className="text-gray-600 text-sm md:text-base">{role}</p>
-        <p className="text-gray-600 mt-2">{description}</p>
+        <p className="text-muted text-sm md:text-base">{role}</p>
+        <p className="mt-2">{description}</p>
       </div>
     </div>
   )

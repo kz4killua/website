@@ -8,6 +8,7 @@ import Skills from "@/components/skills"
 import Projects from "@/components/projects"
 import Reviews from "@/components/reviews"
 import Footer from "@/components/footer"
+import ScrollToTopButton from "@/components/scroll-to-top-button"
 
 
 export default function Home() {
@@ -22,9 +23,10 @@ export default function Home() {
           <Projects />
           <Skills />
           <Reviews />
-          <Footer />
         </div>
       </main>
+      <Footer />
+      <ScrollToTopButton />
     </div>
   )
 }
