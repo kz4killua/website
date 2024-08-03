@@ -1,9 +1,9 @@
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
-import Marquee from "@/components/magicui/marquee";
+import { Star, User } from "lucide-react";
 import { SectionHeading, SectionSubheading } from "./typography";
+import { ArrowRight } from "lucide-react";
 
 
 type Review = {
@@ -15,9 +15,14 @@ type Review = {
 
 const reviews: Review[] = [
   {
+    name: "Aubin C.",
+    avatar: "",
+    content: "One of the sharpest minds I ever had the pleasure of working with. I wish him all the best with all endeavours going forward."
+  },
+  {
     name: "Paws Host, LLC",
     avatar: "",
-    content: "This is a very good freelancer. His knowledge of AI is quite through. He’s both an intuitive and technical problem solver."
+    content: "This is a very good freelancer. His knowledge of AI is quite thorough. He’s both an intuitive and technical problem solver."
   },
   {
     name: "Dan R.",
@@ -27,7 +32,7 @@ const reviews: Review[] = [
   {
     name: "Dan R.",
     avatar: "",
-    content: "Ifeanyi is the best development resource I ever found in over 6 years on Upwork. I highly recommend him he is brilliant and great communicator and his work is high quality."
+    content: "Ifeanyi is the best development resource I've ever found in over 6 years on Upwork. I highly recommend him. He is brilliant and a great communicator and his work is high quality."
   },
   {
     name: "Wolfgang K.",
@@ -42,7 +47,7 @@ const reviews: Review[] = [
   {
     name: "Dan R.",
     avatar: "",
-    content: "Ifeanyi and the work I did with him was my best experience I ever had on this platform. He absolutely delivered 10 out of 10. His communication skills are top notch. He hit all his deadlines. He made it easy to interact with him. He was highly available. The quality of his work is outstanding. You can believe what he says. If he says he can do it...he can do it. You will be lucky if this guy works for you. A+++ amazing."
+    content: "Ifeanyi and the work I did with him were the best experience I ever had on this platform. He absolutely delivered 10 out of 10. His communication skills are top notch. He hit all his deadlines. He made it easy to interact with him. He was highly available. The quality of his work is outstanding. You can believe what he says. If he says he can do it...he can do it. You will be lucky if this guy works for you. A+++ amazing."
   },
   {
     name: "Akash G.",
@@ -57,7 +62,7 @@ const reviews: Review[] = [
   {
     name: "Tue R.",
     avatar: "",
-    content: "Very diligent, accessible, did not over or understate skills, and delivered a very good clean code."
+    content: "Very diligent, accessible, did not over or understate skills, and delivered very good, clean code."
   },
   {
     name: "Dowell Living Lab",
@@ -67,12 +72,17 @@ const reviews: Review[] = [
   {
     name: "Archie L.",
     avatar: "",
-    content: "Ifeanyi completed the task timely and did a very good job. Would love to work with him again!"
+    content: "Ifeanyi completed the task on time and did a very good job. Would love to work with him again!"
   }
 ]
 
 
 export default function Reviews() {
+
+  const split = Math.ceil(reviews.length / 2);
+  const firstHalf = reviews.slice(0, split);
+  const secondHalf = reviews.slice(split, reviews.length);
+
   return (
     <Container>
       <SectionHeading>Reviews</SectionHeading>
@@ -81,25 +91,37 @@ export default function Reviews() {
         <Link 
           href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
           target="_blank"
-          className="font-semibold text-gray-600 hover:underline underline-offset-4"
+          className="font-semibold text-secondary hover:underline underline-offset-4"
         >
           Upwork
         </Link>
       </SectionSubheading>
+
       <div className="mt-7 text-gray-600">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {reviews.map((review, index) => (
-            <ReviewItem key={index} {...review} />
-          ))} 
+          <div className="flex flex-col gap-y-4">
+            {firstHalf.map((review, index) => (
+              <ReviewItem key={index} {...review} />
+            ))}
+          </div>
+          <div className="flex flex-col gap-y-4">
+            {secondHalf.map((review, index) => (
+              <ReviewItem key={index} {...review} />
+            ))}
+          </div>
         </div>
-        <div className="text-center mt-8">
+        <div className="mt-8 flex items-center justify-center">
           View more reviews on&nbsp;
           <Link 
             href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
             target="_blank"
-            className="font-semibold text-gray-600 hover:underline underline-offset-4"
+            className={clsx(
+              "group flex items-center justify-center",
+              "font-semibold text-secondary hover:underline underline-offset-4",
+            )}
           >
-            Upwork
+            Upwork&nbsp;
+            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
           </Link>
         </div>
       </div>
@@ -110,14 +132,21 @@ export default function Reviews() {
 
 function ReviewItem({ name, avatar, content }: Review) {
   return (
-    <div className="bg-white rounded-xl shadow-lg border p-6 flex flex-col gap-6">
+    <div className="bg-background text-foreground rounded-xl shadow-lg border p-6 flex flex-col gap-4">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-full bg-gray-200"></div>
+        <User className="size-5 text-secondary" />
         <div>
           <h3 className="text-lg font-semibold">{name}</h3>
         </div>
       </div>
-      <p className="text-gray-600">{content}</p>
+      <p>{content}</p>
+      <div className="flex gap-x-0.5">
+        <Star className="fill-amber-400 stroke-0" size={24} />
+        <Star className="fill-amber-400 stroke-0" size={24} />
+        <Star className="fill-amber-400 stroke-0" size={24} />
+        <Star className="fill-amber-400 stroke-0" size={24} />
+        <Star className="fill-amber-400 stroke-0" size={24} />
+      </div>
     </div>
   );
 }

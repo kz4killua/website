@@ -49,7 +49,7 @@ export default function Experience() {
     <Container>
       <SectionHeading>Experience</SectionHeading>
       <SectionSubheading>My journey so far</SectionSubheading>
-      <div className="space-y-10 mt-7 md:text-lg text-gray-600">
+      <div className="space-y-10 mt-7 md:text-lg">
         {experience.map((item, index) => (
           <ExperienceItem 
             key={index}
@@ -88,7 +88,7 @@ function ExperienceItem({ image, company, role, date, description } : {
           <p className="text-gray-600 text-sm md:text-base">{date}</p>
         </div>
         <p className="text-gray-600 text-sm md:text-base">{role}</p>
-        <p className="text-gray-600 mt-2">{description}</p>
+        <p className="mt-2">{description}</p>
       </div>
     </div>
   )

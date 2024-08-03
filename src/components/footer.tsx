@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
 import { SectionHeading, SectionSubheading } from "./typography";
-import { GithubIcon, LinkedInIcon } from "./icons";
+import { GithubIcon, LinkedInIcon, InstagramIcon } from "./icons";
 
 
 export default function Footer() {
@@ -19,6 +19,9 @@ export default function Footer() {
           </Link>
           <Link href={"https://github.com/kz4killua"} target="_blank">
             <GithubIcon height={30} />
+          </Link>
+          <Link href={"https://www.instagram.com/kz4killua/"} target="_blank">
+            <InstagramIcon height={30} />
           </Link>
         </div>
         <p className="text-sm">

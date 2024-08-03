@@ -10,13 +10,22 @@ export default function About() {
     <Container>
       <SectionHeading>About Me</SectionHeading>
       <SectionSubheading>Introducing me, myself, and I</SectionSubheading>
-      <div className="mt-7 md:text-lg text-gray-600 flex flex-col gap-y-2">
+      <div className="mt-7 md:text-lg flex flex-col gap-y-2">
         <p>
-          👋 Hey there! My name is Ifeanyi (pronounced ee-fan-yee) and I&apos;m a 
+          <span className="inline-block animate-wave">👋</span> Hey there! 
+          My name is Ifeanyi (pronounced ee-fan-yee) and I&apos;m a 
           student at Ontario Tech University, studying Computer Science.           
         </p>
         <p>
-          👨‍💻 I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning.
+          👨‍💻 I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning. 
+          Check out my Github 
+          <Link 
+            href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
+            className="ml-1 text-secondary font-semibold hover:underline underline-offset-4"
+            target="_blank"
+          >
+            here
+          </Link>.
         </p>
         <p>
           💼 I do freelance software engineering on Upwork. I am currently 
@@ -24,7 +33,7 @@ export default function About() {
           Check out my profile and reviews 
           <Link 
             href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
-            className="ml-1 text-blue-500 hover:text-blue-700 underline underline-offset-4"
+            className="ml-1 text-secondary font-semibold hover:underline underline-offset-4"
             target="_blank"
           >
             here

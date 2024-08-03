@@ -1,32 +1,67 @@
+"use client"
+
 import Image from "next/image"
+import Link from "next/link"
+import { InstagramIcon, LinkedinIcon, GithubIcon } from "lucide-react"
 import Container from "@/components/container"
+import "./hero.modules.css"
 
 
 export default function Hero() {
   return (
-    <Container className="flex flex-col md:flex-row items-center justify-evenly md:justify-between min-h-dvh py-10 gap-y-10">
-      <div className="flex items-center max-w-sm lg:max-w-lg">
-        <div className="flex flex-col gap-y-5">
-          <h1 className="font-bold text-4xl md:text-5xl">
-            Hi, I&apos;m Ifeanyi! <div className="inline-block text-3xl lg:text-5xl animate-wave">👋</div>
-          </h1> 
-          <h3 className="font-semibold md:text-xl">
-            Software Engineer
-          </h3>
-          <p className="md:text-lg text-gray-600">
-            Currently pursuing a Bachelor&apos;s degree in Computer Science at Ontario Tech University. 
-          </p>
-        </div>
-      </div>
-      <div className="w-full order-first md:order-last md:w-fit flex items-center justify-center">
-        <Image 
+    <Container className="relative sm:min-h-dvh flex flex-col sm:flex-row justify-between gap-10 sm:gap-20 py-10">
+      <ContactLinks />
+      <Bio />
+      <Headshot />
+    </Container>
+  )
+}
+
+
+function ContactLinks() {
+  return (
+    <div className="flex flex-row sm:flex-col items-center justify-center gap-10">
+      <Link href={"https://www.instagram.com/kz4killua/"}>
+        <InstagramIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+      </Link>
+      <Link href={"https://github.com/kz4killua"}>
+        <GithubIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+      </Link>
+      <Link href={"https://www.linkedin.com/in/ifeanyiobinelo"}>
+        <LinkedinIcon className="transition-transform duration-300 ease-in-out hover:rotate-12" height={30} />
+      </Link>
+    </div>
+  )
+}
+
+
+function Headshot() {
+  return (
+    <div className="w-full order-first md:order-last md:w-fit flex items-center justify-center">
+      <div className="hero-image-container relative overflow-hidden size-72 rounded-full ">
+        <Image
           src="/images/headshot.png"
           alt="Ifeanyi"
-          width={250}
-          height={250}
-          className="rounded-full"
+          fill
         />
       </div>
-    </Container>
+    </div>
+  )
+}
+
+
+function Bio() {
+  return (
+      <div className="flex flex-col justify-center gap-y-6">
+        <h1 className="font-bold text-4xl md:text-6xl">
+          <span className="text-secondary">Hi, I’m </span> <span className="text-primary">Ifeanyi</span>
+        </h1> 
+        <h3 className="font-bold md:text-2xl">
+          Software Engineer
+        </h3>
+        <p className="md:text-xl">
+          Currently pursuing a Bachelor&apos;s degree in Computer Science at Ontario Tech University. 
+        </p>
+      </div>
   )
 }

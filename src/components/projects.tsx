@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
-import { LinkIcon } from "lucide-react";
+import { ArrowRight, LinkIcon } from "lucide-react";
 import { GithubIcon } from "@/components/icons";
 import Container from "@/components/container";
 import { SectionHeading, SectionSubheading } from "./typography";
@@ -77,11 +77,25 @@ export default function Projects() {
     <Container>
       <SectionHeading>Technical Projects</SectionHeading>
       <SectionSubheading>My recent work</SectionSubheading>
-      <div className="mt-7 md:text-lg text-gray-600 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="mt-7 md:text-lg grid grid-cols-1 md:grid-cols-2 gap-5">
         {projects.map((project, index) => (
           <ProjectItem key={index} {...project} />
         ))}
       </div>
+      <div className="mt-8 flex items-center justify-center">
+          View more projects on&nbsp;
+          <Link 
+            href={"https://github.com/kz4killua"} 
+            target="_blank"
+            className={clsx(
+              "group flex items-center justify-center",
+              "font-semibold text-secondary hover:underline underline-offset-4",
+            )}
+          >
+            Github&nbsp;
+            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
+          </Link>
+        </div>
     </Container>
   )
 }
@@ -89,7 +103,7 @@ export default function Projects() {
 
 function ProjectItem({ title, description, image, links } : Project) {
   return (
-    <div className="bg-white rounded-xl shadow-lg border p-6 flex flex-col gap-6">
+    <div className="bg-background rounded-xl shadow-lg border p-6 flex flex-col gap-6">
       <Image
         src={image}
         alt={title}
@@ -98,17 +112,17 @@ function ProjectItem({ title, description, image, links } : Project) {
         className="rounded-xl border"
       />
       <div className="space-y-2">
-        <h3 className="text-primary font-bold md:text-lg">{title}</h3>
-        <p className="text-gray-600 text-base">{description}</p>
+        <h3 className="text-secondary font-bold md:text-lg">{title}</h3>
+        <p className="text-base">{description}</p>
         <div className="text-sm font-medium flex gap-x-4">
           {links.live && (
-            <Link href={links.live} className="group flex gap-x-1 items-center" target="_blank">
+            <Link href={links.live} className="group hover:text-secondary flex gap-x-1 items-center" target="_blank">
               <LinkIcon className="group-hover:rotate-180 transition-transform duration-300" size={14} /> Live
             </Link>
           )}
           {links.github && (
-            <Link href={links.github} className="group flex gap-x-1 items-center" target="_blank">
-              <GithubIcon height={14} width={14} className="fill-gray-600 group-hover:rotate-180 transition-transform duration-300" /> GitHub
+            <Link href={links.github} className="group hover:text-secondary flex gap-x-1 items-center" target="_blank">
+              <GithubIcon height={14} width={14} className="group-hover:rotate-180 transition-transform duration-300" /> GitHub
             </Link>
           )}
         </div>
