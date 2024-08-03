@@ -46,6 +46,14 @@ const projects: Project[] = [
     },
   },
   {
+    title: "Rebel Creative",
+    description: "A (highly animated) portfolio website for a creative agency",
+    image: "/images/rebel-creative.png",
+    links: {
+      live: "https://www.rebelcreative.art/"
+    }
+  },
+  {
     title: "Songle",
     description: "An online multiplayer music game. Guess the song...with friends!",
     image: "/images/songle.png",
@@ -69,6 +77,14 @@ const projects: Project[] = [
       github: "https://github.com/kz4killua/wordle-ai",
     },
   },
+  {
+    title: "Chess AI",
+    description: "A chess engine that plays chess using the minimax algorithm",
+    image: "/images/chess-ai.jpg",
+    links: {
+      github: "https://github.com/kz4killua/chess-ai"
+    }
+  }
 ];
 
 
@@ -109,7 +125,7 @@ function ProjectItem({ title, description, image, links } : Project) {
         alt={title}
         width={500}
         height={500}
-        className="rounded-xl border"
+        className="rounded-xl border aspect-video object-cover"
       />
       <div className="space-y-2">
         <h3 className="text-secondary font-bold md:text-lg">{title}</h3>
