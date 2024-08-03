@@ -24,7 +24,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
     --primary: var(--brown);
-    --primary-foreground: 210 40% 98%;
+    --primary-foreground: var(--white);
     --secondary: var(--dark-brown);
     --secondary-foreground: var(--white);
     --muted: 215 14% 34%;
