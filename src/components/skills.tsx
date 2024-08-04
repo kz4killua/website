@@ -157,17 +157,19 @@ const skills = {
 
 export default function Skills() {
   return (
-    <Container>
-      <SectionHeading>Skills</SectionHeading>
-      <SectionSubheading>Tools I use</SectionSubheading>
-      <div className="mt-7 md:text-lg text-muted space-y-2 relative">
-        <SkillsList skills={skills.languages} />
-        <SkillsList skills={skills.frameworks} reverse />
-        <SkillsList skills={skills.tools} />
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
-      </div>
-    </Container>
+    <section id="skills" className="pt-24 pb-6">
+      <Container>
+        <SectionHeading>Skills</SectionHeading>
+        <SectionSubheading>Tools I use</SectionSubheading>
+        <div className="mt-7 md:text-lg text-muted space-y-2 relative">
+          <SkillsList skills={skills.languages} />
+          <SkillsList skills={skills.frameworks} reverse />
+          <SkillsList skills={skills.tools} />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-background"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-background"></div>
+        </div>
+      </Container>
+    </section>
   )
 }
 

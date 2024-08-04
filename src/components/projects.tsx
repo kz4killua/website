@@ -90,29 +90,31 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <Container>
-      <SectionHeading>Technical Projects</SectionHeading>
-      <SectionSubheading>My recent work</SectionSubheading>
-      <div className="mt-7 md:text-lg grid grid-cols-1 md:grid-cols-2 gap-5">
-        {projects.map((project, index) => (
-          <ProjectItem key={index} {...project} />
-        ))}
-      </div>
-      <div className="mt-8 text-center">
-          View more projects on&nbsp;
-          <Link 
-            href={"https://github.com/kz4killua"} 
-            target="_blank"
-            className={clsx(
-              "group inline-flex items-center justify-center",
-              "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
-            )}
-          >
-            Github&nbsp;
-            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
-          </Link>
+    <section id="projects" className="pt-24 pb-6">
+      <Container>
+        <SectionHeading>Technical Projects</SectionHeading>
+        <SectionSubheading>My recent work</SectionSubheading>
+        <div className="mt-7 md:text-lg grid grid-cols-1 md:grid-cols-2 gap-5">
+          {projects.map((project, index) => (
+            <ProjectItem key={index} {...project} />
+          ))}
         </div>
-    </Container>
+        <div className="mt-8 text-center">
+            View more projects on&nbsp;
+            <Link 
+              href={"https://github.com/kz4killua"} 
+              target="_blank"
+              className={clsx(
+                "group inline-flex items-center justify-center",
+                "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
+              )}
+            >
+              Github&nbsp;
+              <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
+            </Link>
+          </div>
+      </Container>
+    </section>
   )
 }
 

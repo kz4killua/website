@@ -46,22 +46,24 @@ const experience = [
 
 export default function Experience() {
   return (
-    <Container>
-      <SectionHeading>Experience</SectionHeading>
-      <SectionSubheading>My journey so far</SectionSubheading>
-      <div className="space-y-10 mt-7 md:text-lg">
-        {experience.map((item, index) => (
-          <ExperienceItem 
-            key={index}
-            image={item.image}
-            company={item.company}
-            role={item.role}
-            date={item.date}
-            description={item.description}
-          />
-        ))}
-      </div>
-    </Container>
+    <section id="experience" className="pt-24 pb-6">
+      <Container>
+        <SectionHeading>Experience</SectionHeading>
+        <SectionSubheading>My journey so far</SectionSubheading>
+        <div className="space-y-10 mt-7 md:text-lg">
+          {experience.map((item, index) => (
+            <ExperienceItem 
+              key={index}
+              image={item.image}
+              company={item.company}
+              role={item.role}
+              date={item.date}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </Container>
+    </section>
   )
 }
 

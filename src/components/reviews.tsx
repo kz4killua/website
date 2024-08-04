@@ -84,48 +84,51 @@ export default function Reviews() {
   const secondHalf = reviews.slice(split, reviews.length);
 
   return (
-    <Container>
-      <SectionHeading>Reviews</SectionHeading>
-      <SectionSubheading>
-        Real reviews, from real people on&nbsp;
-        <Link 
-          href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
-          target="_blank"
-          className="font-semibold text-secondary hover:text-primary hover:underline underline-offset-4"
-        >
-          Upwork
-        </Link>
-      </SectionSubheading>
+    <section id="reviews" className="pt-24 pb-6">
 
-      <div className="mt-7">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="flex flex-col gap-y-4">
-            {firstHalf.map((review, index) => (
-              <ReviewItem key={index} {...review} />
-            ))}
-          </div>
-          <div className="flex flex-col gap-y-4">
-            {secondHalf.map((review, index) => (
-              <ReviewItem key={index} {...review} />
-            ))}
-          </div>
-        </div>
-        <div className="mt-8 text-center">
-          View more reviews on&nbsp;
+      <Container>
+        <SectionHeading>Reviews</SectionHeading>
+        <SectionSubheading>
+          Real reviews, from real people on&nbsp;
           <Link 
             href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
             target="_blank"
-            className={clsx(
-              "group inline-flex items-center justify-center",
-              "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
-            )}
+            className="font-semibold text-secondary hover:text-primary hover:underline underline-offset-4"
           >
-            Upwork&nbsp;
-            <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
+            Upwork
           </Link>
+        </SectionSubheading>
+
+        <div className="mt-7">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col gap-y-4">
+              {firstHalf.map((review, index) => (
+                <ReviewItem key={index} {...review} />
+              ))}
+            </div>
+            <div className="flex flex-col gap-y-4">
+              {secondHalf.map((review, index) => (
+                <ReviewItem key={index} {...review} />
+              ))}
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            View more reviews on&nbsp;
+            <Link 
+              href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
+              target="_blank"
+              className={clsx(
+                "group inline-flex items-center justify-center",
+                "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
+              )}
+            >
+              Upwork&nbsp;
+              <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
+            </Link>
+          </div>
         </div>
-      </div>
-    </Container>
+      </Container>
+    </section>
   );
 }
 
