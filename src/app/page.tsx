@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <div className="space-y-24 mb-24">
+        <div className="mb-24">
           <About />
           <Experience />
           <Projects />
