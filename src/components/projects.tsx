@@ -98,13 +98,13 @@ export default function Projects() {
           <ProjectItem key={index} {...project} />
         ))}
       </div>
-      <div className="mt-8 flex items-center justify-center">
+      <div className="mt-8 text-center">
           View more projects on&nbsp;
           <Link 
             href={"https://github.com/kz4killua"} 
             target="_blank"
             className={clsx(
-              "group flex items-center justify-center",
+              "group inline-flex items-center justify-center",
               "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
             )}
           >

@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon, InstagramIcon } from "@/components/icons";
 
 export default function Footer() {
   return (
-    <Container>
+    <Container className="pb-10">
       <footer className="text-center space-y-7">
         <h1 className="font-bold text-lg">
           Ifeanyi Obinelo

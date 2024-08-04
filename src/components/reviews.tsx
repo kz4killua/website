@@ -110,13 +110,13 @@ export default function Reviews() {
             ))}
           </div>
         </div>
-        <div className="mt-8 flex items-center justify-center">
+        <div className="mt-8 text-center">
           View more reviews on&nbsp;
           <Link 
             href={"https://www.upwork.com/freelancers/~012fb0252a88cecd37"} 
             target="_blank"
             className={clsx(
-              "group flex items-center justify-center",
+              "group inline-flex items-center justify-center",
               "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
             )}
           >
