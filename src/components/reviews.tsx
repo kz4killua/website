@@ -15,6 +15,11 @@ type Review = {
 
 const reviews: Review[] = [
   {
+    name: "Kristian H.",
+    avatar: "",
+    content: "Exceptional developer with excellent problem solving skills and attention to detail. Delivered consistently with prompt and thoughtful communication. Went above and beyond throughout the duration of the project. Absolutely would hire Ifeanyi again!"
+  },
+  {
     name: "Wolfgang K.",
     avatar: "",
     content: "Ifeanyi is not only an exceptional developer but also super responsive, helpful, and friendly. He was the first developer I worked with and I couldn't be happier. Hopefully, we will have more projects going forward."
