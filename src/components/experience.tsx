@@ -7,18 +7,18 @@ import { SectionHeading, SectionSubheading } from "./typography";
 
 const experience = [
   {
-    image: "/images/sain.png",
-    company: "Security AI Networks Lab, Ontario Tech University",
-    role: "Undergraduate Machine Learning Researcher",
-    date: "January 2024 - Present",
-    description: "Developing novel approaches to enhance positional awareness in graph neural networks."
-  },
-  {
     image: "/images/civil7.png",
     company: "Civil Seven B.V.",
     role: "Software Engineer",
     date: "August 2023 - Present",
     description: "Using Python and C# to automate model design for tunnel construction."
+  },
+  {
+    image: "/images/sain.png",
+    company: "Security AI Networks Lab, Ontario Tech University",
+    role: "Undergraduate Machine Learning Researcher",
+    date: "May 2024 - August 2024",
+    description: "Developing novel approaches to enhance positional awareness in graph neural networks."
   },
   {
     image: "/images/spreye.png",
