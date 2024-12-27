@@ -20,6 +20,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Course Alerts",
+    description: "A web application that sends email/SMS notifications to students at Ontario Tech University when seats open up in a full course",
+    image: "/images/course-alerts.png",
+    links: {
+      live: "https://www.coursealerts.fyi/",
+    },
+  },
+  {
     title: "Open Tutor",
     description: "Everything you need to study with AI",
     image: "/images/open-tutor.png",
@@ -44,14 +52,6 @@ const projects: Project[] = [
     links: {
       github: "https://github.com/kz4killua/fpl-ai",
     },
-  },
-  {
-    title: "Rebel Creative",
-    description: "A (highly animated) portfolio website for a creative agency",
-    image: "/images/rebel-creative.png",
-    links: {
-      live: "https://www.rebelcreative.art/"
-    }
   },
   {
     title: "Songle",
