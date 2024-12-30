@@ -84,7 +84,15 @@ const projects: Project[] = [
     links: {
       github: "https://github.com/kz4killua/chess-ai"
     }
-  }
+  },
+  {
+    title: "Glassdoor Unlocked",
+    description: "A Chrome extension that allows you to access Glassdoor reviews and information without needing to sign up or leave a review",
+    image: "/images/glassdoor-unlocked.png",
+    links: {
+      github: "https://github.com/kz4killua/glassdoor-unlocked"
+    },
+  },
 ];
 
 
