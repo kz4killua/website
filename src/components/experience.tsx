@@ -9,37 +9,23 @@ const experience = [
   {
     image: "/images/civil7.png",
     company: "Civil Seven B.V.",
-    role: "Software Engineer",
+    role: "Software Engineer (Contract)",
     date: "August 2023 - Present",
-    description: "Using Python and C# to automate model design for tunnel construction."
+    description: "Writing code to automate model design for tunnel construction"
+  },
+  {
+    image: "/images/self-employed.png",
+    company: "Self-Employed",
+    role: "Software Engineer (Freelance)",
+    date: "Jan 2023 - Present",
+    description: "Developing and maintaining several web and desktop applications for individuals and businesses using modern technologies"
   },
   {
     image: "/images/sain.png",
     company: "Security AI Networks Lab, Ontario Tech University",
     role: "Undergraduate Machine Learning Researcher",
     date: "May 2024 - August 2024",
-    description: "Developing novel approaches to enhance positional awareness in graph neural networks."
-  },
-  {
-    image: "/images/spreye.png",
-    company: "Spreye AI",
-    role: "Software Engineer",
-    date: "June 2023 - April 2024",
-    description: "Developed a full-stack AI powered web application to assist project managers with their day-to-day tasks."
-  },
-  {
-    image: "/images/soundwav.png",
-    company: "Soundwav.io",
-    role: "Software Engineer",
-    date: "January 2023 - September 2023",
-    description: "Led the development of a web application that offers a robust platform for organizing, saving and sharing digital content."
-  },
-  {
-    image: "/images/dowell.png",
-    company: "DoWell Research",
-    role: "Software Engineer",
-    date: "August 2022 - October 2022",
-    description: "Worked on a team to develop a web application that automates social media posts."
+    description: "Worked on novel approaches to improve the performance of graph neural networks"
   },
 ]
 

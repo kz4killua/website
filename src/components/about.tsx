@@ -19,9 +19,9 @@ export default function About() {
           </p>
           <p>
             👨‍💻 I&apos;m interested in lots of stuff, but I&apos;m currently exploring web development and machine learning. 
-            Check out my Github 
+            Check out my GitHub profile 
             <Link 
-              href="https://www.upwork.com/freelancers/~012fb0252a88cecd37"
+              href="https://github.com/kz4killua"
               className="ml-1 text-secondary hover:text-primary font-semibold hover:underline underline-offset-4"
               target="_blank"
             >
