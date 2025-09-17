@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, LinkIcon } from "lucide-react";
-import { GithubIcon } from "@/components/icons";
+import { GitHubIcon } from "@/components/icons";
 import Container from "@/components/container";
 import { SectionHeading, SectionSubheading } from "./typography";
 
@@ -24,6 +24,7 @@ const projects: Project[] = [
     description: "A web application that sends email/SMS notifications to students at Ontario Tech University when seats open up in a full course",
     image: "/images/course-alerts.png",
     links: {
+      github: "https://github.com/kz4killua/course-alerts",
       live: "https://www.coursealerts.fyi/",
     },
   },
@@ -32,7 +33,7 @@ const projects: Project[] = [
     description: "Everything you need to study with AI",
     image: "/images/open-tutor.png",
     links: {
-      github: "https://github.com/kz4killua/open-tutor-frontend",
+      github: "https://github.com/kz4killua/open-tutor",
       live: "https://opentutor.ifeanyiobinelo.com/",
     },
   },
@@ -117,7 +118,7 @@ export default function Projects() {
                 "font-semibold text-secondary hover:text-primary hover:underline underline-offset-4",
               )}
             >
-              Github&nbsp;
+              GitHub&nbsp;
               <ArrowRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" size={16} />
             </Link>
           </div>
@@ -148,7 +149,7 @@ function ProjectItem({ title, description, image, links } : Project) {
           )}
           {links.github && (
             <Link href={links.github} className="group hover:text-primary flex gap-x-1 items-center" target="_blank">
-              <GithubIcon height={14} width={14} className="group-hover:rotate-180 group-hover:fill-primary transition-transform duration-300" /> GitHub
+              <GitHubIcon height={14} width={14} className="group-hover:rotate-180 group-hover:fill-primary transition-transform duration-300" /> GitHub
             </Link>
           )}
         </div>
